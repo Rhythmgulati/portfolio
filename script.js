@@ -1,6 +1,33 @@
+
+
 const tl = gsap.timeline();
 
-
+// var swiper = new Swiper('.mySwiper', {
+//     spaceBetween:20,
+//     loop: true,
+//     display:horizontal,
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//     breakpoints: {
+//         640: {
+//           slidesPerView: 1,
+//           spaceBetween: 20,
+//         },
+//         768: {
+//           slidesPerView: 3,
+//           spaceBetween: 40,
+//         },
+//         1024: {
+//           slidesPerView: 6,
+//           spaceBetween: 50,
+//         },
+//       },
+//       autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//       },
+//   });
 
 function time(){
     var a = 0;
@@ -116,13 +143,26 @@ tl.from(".quote",{
 tl.from(".education .heading , .edubox",{
     scale:0,
     opacity:0,
-    // duratiom:0.9,
     scrollTrigger:{
         trigger:".wrapper3",
         scroller:"body",
-        // markers:true,
+        markers:true,
         start:"top 100%",
         end:"bottom 100%",
         scrub:1,
     }
+})
+tl.from(".page5 .heading ,  .project-card",{
+    scale:0,
+    opacity:0,
+    duration:2,
+    scrollTrigger:{
+        trigger:".wrapper5",
+        scroller:"body",
+        start:"top 100%",
+        end:"bottom 100%",
+        scrub:1,
+        // markers:true
+    }
+
 })

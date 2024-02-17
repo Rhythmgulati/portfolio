@@ -8,6 +8,7 @@ body{
     background-color: black;
     width: 100%;
     /* overflow-x: hidden;
+    
 } */}
 
 #loader{
@@ -227,6 +228,7 @@ border-bottom: 2px solid rgb(60, 60, 60);
     font-weight: 500;
     padding-top: 1cm;
     padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
     .edubox-container{
@@ -266,7 +268,72 @@ border-bottom: 2px solid rgb(60, 60, 60);
         color:#ffffff;
         padding: 1rem 0;
     }
+
+
+.page5{
+    position: relative;
+}
     
+.project-card{
+    width: 30rem;
+    position: absolute;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+.pc1{
+    top: 4%;
+    left: 5%;
+}
+.pc2{
+    top:4%;
+    right: 5%;
+}
+.pc3{
+    bottom: 4%;
+    left: 5%;
+}
+.pc4{
+    bottom: 4%;
+    right: 5%;
+}
+.project-card:hover img{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.project-card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.project-card:hover .overlay{
+   opacity: 1;
+}
+.project-card img{
+    width: 100%;
+}
+
+.tool-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 0 200px;
+}
+.tool-cont img{
+    width: 10rem;
+    height: 10rem; 
+}
 
 footer{
     border-top: 2px solid rgb(114, 114, 114);
@@ -281,7 +348,8 @@ footer li{
 }
 .lihead{
     font-size: 20px;
-padding-bottom: 10px;}
+    padding-bottom: 10px;
+}
 footer .name{
     font-weight:100;
     font-size: 40px;
