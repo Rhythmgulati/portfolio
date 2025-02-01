@@ -416,5 +416,119 @@ footer a{
 }
 
 
-
-/* projects page */
+/* Reduce text size for tablets */
+@media screen and (max-width: 1024px) {
+    body {
+      font-size: 15px;
+    }
+  
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
+  /* Reduce text size further for mobile devices */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  }
+  
+  /* Very small screens */
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 5px;
+    }
+    #tools{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+    footer form{
+        width: 90%;
+    }
+    footer form button{
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+    }
+    nav h1{
+        font-size:20px;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 999;
+    }
+    nav a{
+        font-size: 10px;
+    }
+    .left1{
+        font-size: 30px;
+        width: 90%;
+    }
+    .left1 h3{
+        font-size: 30px;
+    }
+    .right1{
+        display: none;
+     }
+     .main2 text2{
+        position: absolute;
+        font-weight: 900;
+    }
+    .main2 h2{
+        font-size: 40px;
+    }
+    .excont{
+        width: 90%;
+    }
+    .exleft{
+        padding: 10px;
+    }
+    .exright{
+        padding: 10px;
+    }
+    .pg3cont p{
+        font-size: 40px;
+    }
+    .page4{
+        height: 100%;
+        width: 90%;
+    }
+    .edubox-container{
+        display: flex;
+        flex-direction: column;
+    }
+       
+    .edubox-container .edubox span{
+        font-size: 20px;
+    }
+    
+    .edubox-container .edubox h3{
+        font-size: 30px;
+    }
+    
+    .edubox-container .edubox p{
+        font-size: 15px;
+    }
+    .socialmedia{
+        margin: 40px;
+        padding: 30px;
+        border-top: 2px solid white;
+    }
+  }
