@@ -154,12 +154,12 @@ nav a{
 }
 .excont{
 display: flex;
-align-items: center;
+width: 50%;
+align-items: left;
 justify-content: left;
 text-align: left;
 gap: 30px;
 border-bottom: 2px solid rgb(60, 60, 60);
-   
 }
 .excont h2{
     font-family: 'Roboto Mono', monospace;
@@ -171,7 +171,17 @@ border-bottom: 2px solid rgb(60, 60, 60);
 
 }
 .exleft{
-    padding: 40px;;
+    padding:30px;
+    width: 30%;
+    margin: 10px 0;
+
+}
+.exright{
+    padding: 30px;
+    margin: 10px 0;
+    width: 60%;
+    border-left: 3px solid white;
+    /* border-radius: 100px; */
 }
 
 #scroll2{
@@ -231,19 +241,24 @@ border-bottom: 2px solid rgb(60, 60, 60);
     margin-bottom: 40px;
 }
 
-    .edubox-container{
-        display: flex;
-        font-family: 'Roboto Mono', monospace;
-        align-items: center;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-        padding:1rem 0;
-        padding-left: 2rem;
-    }
+.edubox-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 2rem; 
+    font-family: 'Roboto Mono', monospace;
+    justify-content: center; /* Centers the grid horizontally */
+    align-items: center; 
+    padding: 1rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
     
     .edubox-container .edubox{
-        width:27rem;
+        width:100%;
         /* margin:30px; */
+        margin-top: .4rem;
         padding-left: 3rem;
         border-left: .2rem solid #fff;
         
